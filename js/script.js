@@ -9,20 +9,20 @@
 // This function keeps on subtracting until the number you are left with is smaller that the number you are dividing by
 function calculate() {
   // input
-  let dividend = parseFloat(document.getElementById("firstNumber").value)
+  let firstUserInput = parseFloat(document.getElementById("firstNumber").value)
   const secondUserInput = parseFloat(document.getElementById("secondNumber").value)
   let number = 0
-  const answer = dividend
+  const answer = firstUserInput
 
   // process
   while (true) {
     number++
-    dividend = dividend - secondUserInput
-    if (dividend < secondUserInput) {
+    firstUserInput = firstUserInput - secondUserInput
+    if (firstUserInput < secondUserInput) {
       break
     }
   }
   // output
   document.getElementById("result").innerHTML =
-    + answer + ' ÷ ' + secondUserInput + ' = ' + number + ' R ' + dividend
+    + answer + ' ÷ ' + secondUserInput + ' = ' + number + ' R ' + firstUserInput
 }
