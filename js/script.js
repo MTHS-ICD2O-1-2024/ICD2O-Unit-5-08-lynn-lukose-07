@@ -12,7 +12,7 @@ function calculate() {
   let dividend = parseFloat(document.getElementById("firstNumber").value)
   const secondUserInput = parseFloat(document.getElementById("secondNumber").value)
   let number = 0
-  const answer = firstUserInput
+  const answer = dividend
 
   // process
   while (true) {
